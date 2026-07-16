@@ -1,0 +1,13 @@
+{
+  "name": "kernel-andy-blog",
+  "version": "1.0.0",
+  "description": "Blog Kernel Andy - Zero Drift",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
