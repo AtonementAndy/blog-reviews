@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: Install dependencie
         run: npm install
 
       - name: Build Eleventy
