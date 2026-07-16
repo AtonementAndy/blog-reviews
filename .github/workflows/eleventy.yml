@@ -28,10 +28,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # Removemos o cache aqui para não exigir o lock file!
 
       - name: Install dependencies
-        run: npm install  # Mudamos de 'npm ci' para 'npm install'
+        run: npm install
 
       - name: Build Eleventy
         run: npm run build
@@ -42,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site' # Pasta que o Eleventy gera
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
